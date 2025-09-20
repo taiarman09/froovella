@@ -59,7 +59,7 @@ li:hover{
 }
 .background{
     width: 100%;
-    background-image: url(./image/background);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -72,6 +72,18 @@ li:hover{
 
 .card1{
     min-width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+
+    img{
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+.card2{
+    min-width: 250px;
+    max-width: 251px;
     height: 350px;
     border-radius: 20px;
     border: none;
@@ -94,12 +106,23 @@ li:hover{
     overflow: scroll;
 }
 .box5{
-
     padding-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     gap: 20px;
-    overflow: scroll;
+   overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.box6{
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 .font1{
     margin-top: 20px;
@@ -115,6 +138,12 @@ li:hover{
     font-size: 30px;
     font-style: oblique;
 }
+.Plum{
+    padding-left: 1500px;
+}
+
+
+
 
 
 
@@ -126,6 +155,9 @@ li:hover{
         display: flex;
     }
     .box5{
+        display: flex;
+    }
+    .box6{
         display: flex;
     }
 }
@@ -160,8 +192,17 @@ li:hover{
         display: none;
     }
 }
+@media(min-width:900px){
+    .Plum{
+        padding-left: 1000px;
+    }
+}
 @media(max-width:850px){
     .card1{
+        min-width: 200px;
+        height: 200px;
+    }
+    .card2{
         min-width: 200px;
         height: 200px;
     }
@@ -191,6 +232,9 @@ li:hover{
     .card1{
         min-width: 150px;
     }
+    .card2{
+        min-width: 150px;
+    }
     .center{
         font-size: 20px;
         margin-left: 20%;
@@ -205,6 +249,9 @@ li:hover{
         padding-bottom: 40px;
     }
     .box5{
+        padding-bottom: 0px;
+    }
+    .box6{
         padding-bottom: 0px;
     }
     .font3{
@@ -226,6 +273,10 @@ li:hover{
         height: 50px;
     }
     .card1{
+        min-width: 100px;
+        height: 130px;
+    }
+    .card2{
         min-width: 100px;
         height: 130px;
     }
