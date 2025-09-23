@@ -237,6 +237,15 @@ h3:hover{
     align-items: center;
     height: 40%;
 }
+footer{
+    background-image: url(https://froovella.com/cdn/shop/files/green.jpg?v=1667137052);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w-80-{
+    width: 80%;
+    border: 1px solid black;
+}
 
 
 
